@@ -1,4 +1,4 @@
-# MyBlog
+# MyBlog [點擊前往](https://lockingwang.github.io/MyBlog/)
 
 ## 作品說明
 
