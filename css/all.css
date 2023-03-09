@@ -1,3 +1,8 @@
 :root {
   --bs-font-sans-serif: system-ui,-apple-system,"Microsoft JhengHei","Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
 }/*# sourceMappingURL=all.css.map */
