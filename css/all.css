@@ -5,4 +5,8 @@
 .bg-cover {
   background-position: center center;
   background-size: cover;
+}
+
+.nav-link:hover {
+  background: #0dcaf0;
 }/*# sourceMappingURL=all.css.map */

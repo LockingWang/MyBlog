@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Template</title>
+    <title>CongRen的部落格(作品)</title>
+
+    <link rel="apple-tough-icon" href="images/blog_icon.png" />
+    <link rel="shortcut icon" href="images/blog_icon.png" />
+    <meta name="description" content="CongRen的Blog作品頁" />
+
+    <meta property="og:title" content="CongRen的部落格(作品)" />
+    <meta property="og:description" content="CongRen的Blog作品頁">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:image" content="images/blog_icon.png" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/all.css">
@@ -12,16 +22,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
 
         <header class="py-3 text-center border-bottom">
-            <a href="#" class="h2 link-dark text-decoration-none">Harry的Blog</a>
+            <a href="#" class="h2 link-dark text-decoration-none">歡迎來到CongRen的Blog(作品)</a>
         </header>
 
         <div class="overflow-auto py-1">
             <nav class="nav justify-content-between flex-nowrap text-nowrap">
                 <!-- 水平滾動卷軸使用  overflow-auto、flex-nowrap、text-nowrap -->
-                <a class="nav-link link-secondary" href="#">HTML</a>
+                <a class="nav-link link-secondary nav-hover" href="#">HTML</a>
                 <a class="nav-link link-secondary" href="#">CSS</a>
                 <a class="nav-link link-secondary" href="#">JavaScript</a>
                 <a class="nav-link link-secondary" href="#">Backend</a>
@@ -42,11 +52,11 @@
                 <p class="lead my-3">
                     首先，你要有一個持續學習的習慣，因為在這個技術不斷更新的時代，你現在所使用的技術或版本，在5年後可能就被新技術所取代，且你所使用的技術可能也無法在5年後的裝置上順利運行，所以保持一個持續吸收新知，跟上時代腳步是非常重要的。
                 </p>
-                <p class="lead mb-0"><a class="text-white" href="#">繼續閱讀</a></p>
+                <p class="lead mb-0 text-end text-md-start"><a class="text-white" href="#">繼續閱讀</a></p>
             </div>
         </div>
 
-        <div class="row row-cols-1 row-cols-lg-2 mb-4">
+        <div class="row row-cols-1 row-cols-lg-2 mb-4 gy-2">
             <div class="col">
                 <div class="card row g-0 flex-row h-100">
                 <!-- 在 g-0 的情況下，可以不另新增一個容器，直接加row在原容器上 -->
@@ -57,12 +67,12 @@
                         <!-- 如果要套用margin auto 來推東西，那麼要有d-flex跟已經確定的寬或高(這邊為h-100) -->
                             <strong class="d-inline-block mb-2 text-primary">藝術</strong>
                             <h3 class="mb-0">想像力是你的超能力</h3>
-                            <div class="mb-1 text-muted">三月九日</div>
-                            <p class="card-text mb-auto">[全世界我最喜歡你 歌詞]今天天氣很好，臉上總是笑，笑的真可愛，可惜不是對我笑。</p>
-                            <a class="stretched-link" href="#">繼續閱讀</a>
+                            <div class="mb-1 text-muted">3月9日</div>
+                            <p class="card-text mb-auto">創意的本質應該是創造出新的題材與事物，而非一昧的模仿。</p>
+                            <a class="stretched-link text-end text-md-start" href="#">繼續閱讀</a>
                         </div>
                     </div>
-                    <div class="col-4 bg-cover d-none d-lg-block" style="background-image: url('https://plus.unsplash.com/premium_photo-1664361480561-3bdcd6eb3b6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');"></div>
+                    <div class="col-4 bg-cover d-none d-md-block" style="background-image: url('https://plus.unsplash.com/premium_photo-1664361480561-3bdcd6eb3b6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');"></div>
                 </div>
             </div>
             <div class="col">
@@ -73,20 +83,21 @@
                         <div class="p-4 d-flex flex-column h-100">
                         <!-- 如果需要調整padding，新增一個容器來調整，不要直接加在.col容器上 -->
                         <!-- 如果要套用margin auto 來推東西，那麼要有d-flex跟已經確定的寬或高(這邊為h-100) -->
-                            <strong class="d-inline-block mb-2 text-primary">藝術</strong>
-                            <h3 class="mb-0">想像力是你的超能力</h3>
-                            <div class="mb-1 text-muted">三月九日</div>
-                            <p class="card-text mb-auto">[全世界我最喜歡你 歌詞]今天天氣很好，臉上總是笑，笑的真可愛，可惜不是對我笑。真的好喜歡你，希望你知道~寫一首歌給你，希望你聽到。</p>
-                            <a class="stretched-link" href="#">繼續閱讀</a>
+                            <strong class="d-inline-block mb-2 text-primary">健康</strong>
+                            <h3 class="mb-0">建立三段五級預防觀念</h3>
+                            <div class="mb-1 text-muted">3月12日</div>
+                            <p class="card-text mb-auto">三段五級 : 健康促進、特殊保護、早期發現/早期治療、限制殘障、復健，若人人都能建立三段五級預防觀念，那麼我們將能擁有健康的晚年生活。</p>
+                            <a class="stretched-link text-end text-md-start" href="#">繼續閱讀</a>
                         </div>
                     </div>
-                    <div class="col-4 bg-cover d-none d-lg-block" style="background-image: url('https://plus.unsplash.com/premium_photo-1664361480561-3bdcd6eb3b6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');"></div>
+                    <div class="col-4 bg-cover d-none d-md-block" style="background-image: url('https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');"></div>
                 </div>
             </div>
         </div>
 
         <div class="row g-md-5">
             <div class="col-md-8">
+                <h5>內容範例(取自 <a class="link-success" href="https://www.hexschool.com/2021/07/07/2021-07-07-vue3-summer-camp/">六角學院 Vue 3 新手夏令營</a> )</h5>
                 <article>
                     <div class="article-entry">
                         <!-- 下方img套用 img-fluid可以讓圖片符合RWD。 -->
@@ -148,35 +159,42 @@
                     <div class="p-4 bg-light rounded">
                         <h4>關於我</h4>
                         <p class="mb-0">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia expedita quia tenetur.
+                            這是我在學習Bootstrap 5時所練習的作業，主要目的是在熟悉Bootstrap 5的語法以及知道該如何修改參數。作業完成時間為2023年3月9日。
                         </p>
                     </div>
                     <div class="p-4 pb-0">
-                        <h4>封存</h4>
+                        <h4>分類</h4>
                         <ol class="list-unstyled">
-                            <li><a href="#">2023年 12 月</a></li>
-                            <li><a href="#">2023年 11 月</a></li>
-                            <li><a href="#">2023年 10 月</a></li>
-                            <li><a href="#">2023年 9 月</a></li>
-                            <li><a href="#">2023年 8 月</a></li>
-                            <li><a href="#">2023年 7 月</a></li>
-                            <li><a href="#">2023年 6 月</a></li>
-                            <li><a href="#">2023年 5 月</a></li>
-                            <li><a href="#">2023年 4 月</a></li>
-                            <li><a href="#">2023年 3 月</a></li>
+                            <li><a class="link-success" href="#">2023年 12 月</a></li>
+                            <li><a class="link-success" href="#">2023年 11 月</a></li>
+                            <li><a class="link-success" href="#">2023年 10 月</a></li>
+                            <li><a class="link-success" href="#">2023年 9 月</a></li>
+                            <li><a class="link-success" href="#">2023年 8 月</a></li>
+                            <li><a class="link-success" href="#">2023年 7 月</a></li>
+                            <li><a class="link-success" href="#">2023年 6 月</a></li>
+                            <li><a class="link-success" href="#">2023年 5 月</a></li>
+                            <li><a class="link-success" href="#">2023年 4 月</a></li>
+                            <li><a class="link-success" href="#">2023年 3 月</a></li>
                         </ol>
                     </div>
                     <div class="p-4 pt-0">
                         <h4>追蹤我</h4>
                         <ul class="list-unstyled">
-                            <li><a href="#">GitHub</a></li>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
+                            <li><a class="link-success" href="#">GitHub</a></li>
+                            <li><a class="link-success" href="#">Facebook</a></li>
+                            <li><a class="link-success" href="#">Twitter</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <footer class="bg-light p-4 mt-4 text-center">
+        <p>Bootstrap 5 練習作業</p>
+        <p>
+            <a href="#container">Back To Top</a>
+        </p>
+    </footer>
 </body>
 </html>
